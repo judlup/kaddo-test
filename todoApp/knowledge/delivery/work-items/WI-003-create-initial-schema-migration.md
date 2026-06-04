@@ -2,7 +2,7 @@
 id: WI-003
 title: Create initial schema migration (tasks + projects)
 initiative: Initiative 1 — Project Foundation
-status: ready
+status: done
 knowledge_level: K1
 created_at: 2026-06-04
 ---
@@ -35,14 +35,14 @@ A migration file that creates the `tasks` and `projects` tables with all MVP fie
 
 **Definition of Done:**
 
-- [ ] `001_init.sql` created in `src/database/migrations/`.
-- [ ] `projects` table schema:
+- [x] `001_init.ts` created in `src/database/migrations/` (TypeScript migration file — see current-state.md deviation #2).
+- [x] `projects` table schema:
   - `id` INTEGER PRIMARY KEY AUTOINCREMENT
   - `name` TEXT NOT NULL
   - `description` TEXT
   - `created_at` TEXT NOT NULL DEFAULT (datetime('now'))
   - `updated_at` TEXT NOT NULL DEFAULT (datetime('now'))
-- [ ] `tasks` table schema:
+- [x] `tasks` table schema:
   - `id` INTEGER PRIMARY KEY AUTOINCREMENT
   - `title` TEXT NOT NULL
   - `description` TEXT
@@ -53,7 +53,7 @@ A migration file that creates the `tasks` and `projects` tables with all MVP fie
   - `created_at` TEXT NOT NULL DEFAULT (datetime('now'))
   - `updated_at` TEXT NOT NULL DEFAULT (datetime('now'))
   - `completed_at` TEXT DEFAULT NULL
-- [ ] Integration test confirms both tables exist after running migrations on a fresh in-memory DB.
+- [x] Integration test confirms both tables exist after running migrations on a fresh in-memory DB. (15 tests passing in `schema.test.ts`)
 
 **Open questions:**
 

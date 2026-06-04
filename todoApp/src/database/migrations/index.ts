@@ -3,7 +3,10 @@ export interface Migration {
   sql: string;
 }
 
+import { migration as m001Init } from './001_init';
+
 // Migrations are registered here in order.
 // Each entry corresponds to a work item in knowledge/delivery/work-items/.
-// WI-003 will add the first migration (001_init).
-export const migrations: Migration[] = [];
+export const migrations: Migration[] = [
+  m001Init,
+];
