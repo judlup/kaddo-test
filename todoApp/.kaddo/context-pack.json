@@ -1,0 +1,124 @@
+{
+  "version": "1",
+  "generatedAt": "2026-06-04T23:13:27.141Z",
+  "project": {
+    "name": "todoApp",
+    "state": "new",
+    "teamSize": "small",
+    "structure": "monorepo"
+  },
+  "scan": {
+    "available": true,
+    "languages": [],
+    "frameworks": [],
+    "packageManagers": [],
+    "sourceDirectories": [],
+    "migrationDirectories": [],
+    "contractFiles": [],
+    "infrastructureFiles": []
+  },
+  "knowledge": {
+    "summary": "> What is true about this product right now.",
+    "roadmapSummary": "> What we intend to build and why.",
+    "inventoryAvailable": true,
+    "workItems": [
+      {
+        "id": "",
+        "type": "codebase",
+        "title": "",
+        "status": "draft",
+        "knowledgeLevel": "",
+        "domains": []
+      }
+    ],
+    "artifacts": []
+  },
+  "layers": [
+    {
+      "layer": "Business",
+      "items": [
+        {
+          "name": "problem",
+          "present": false
+        },
+        {
+          "name": "users",
+          "present": false
+        },
+        {
+          "name": "value-proposition",
+          "present": false
+        },
+        {
+          "name": "constraints",
+          "present": false
+        },
+        {
+          "name": "business-rules",
+          "present": false
+        }
+      ]
+    },
+    {
+      "layer": "Product",
+      "items": [
+        {
+          "name": "product brief",
+          "present": false
+        },
+        {
+          "name": "capabilities",
+          "present": false
+        }
+      ]
+    },
+    {
+      "layer": "Tech",
+      "items": [
+        {
+          "name": "codebase",
+          "present": true
+        },
+        {
+          "name": "current-state",
+          "present": false
+        },
+        {
+          "name": "decisions",
+          "present": false
+        }
+      ]
+    },
+    {
+      "layer": "Delivery",
+      "items": [
+        {
+          "name": "roadmap",
+          "present": true
+        },
+        {
+          "name": "work items",
+          "present": true
+        }
+      ]
+    }
+  ],
+  "mappedModules": [],
+  "missing": [],
+  "handoff": {
+    "recommendedAgents": [
+      "roadmap-agent",
+      "architecture-agent"
+    ],
+    "nextSteps": [
+      "Use roadmap-agent to shape an initial roadmap.",
+      "Use architecture-agent to outline the intended architecture."
+    ],
+    "instructions": [
+      "Use this context pack as the project baseline.",
+      "Do not write code yet.",
+      "First extract: system capabilities, architecture notes, risks, open questions and roadmap candidates.",
+      "This pack is deterministic CLI output — it does not interpret the system. That is your job."
+    ]
+  }
+}
