@@ -1,0 +1,147 @@
+{
+  "project": {
+    "name": "todoApp",
+    "state": "new",
+    "teamSize": "small",
+    "structure": "monorepo"
+  },
+  "stack": {
+    "language": "typescript",
+    "packageManager": "pnpm",
+    "sourceDirectories": [
+      "src"
+    ],
+    "migrationDirectories": [],
+    "contractFiles": [],
+    "infrastructureFiles": []
+  },
+  "knowledge": {
+    "hasScan": true,
+    "hasInventory": true,
+    "hasContextPack": true,
+    "hasUnderstand": true,
+    "hasCapabilities": true,
+    "hasArchitecture": true,
+    "hasRoadmap": true,
+    "hasAgents": true
+  },
+  "workItems": {
+    "total": 2,
+    "inProgress": 0,
+    "done": 0,
+    "cancelled": 0,
+    "byState": {
+      "draft": 1,
+      "ready": 0,
+      "in-progress": 0,
+      "blocked": 0,
+      "completed": 1,
+      "archived": 0
+    },
+    "byType": {
+      "chore": 2
+    },
+    "initiatives": [
+      {
+        "name": "Project Foundation",
+        "states": {
+          "draft": 1,
+          "ready": 0,
+          "in-progress": 0,
+          "blocked": 0,
+          "completed": 1,
+          "archived": 0
+        }
+      }
+    ],
+    "items": [
+      {
+        "id": "WI-001",
+        "title": "Initialize TypeScript CLI project",
+        "type": "chore",
+        "status": "completed",
+        "lifecycle": "completed",
+        "initiative": "Project Foundation",
+        "knowledgeLevel": "K1",
+        "hasOwnership": true,
+        "domains": [
+          "cli",
+          "repository-foundation"
+        ]
+      },
+      {
+        "id": "WI-002",
+        "title": "Initialize TypeScript CLI project",
+        "type": "chore",
+        "status": "draft",
+        "lifecycle": "draft",
+        "initiative": "Project Foundation",
+        "knowledgeLevel": "K1",
+        "hasOwnership": true,
+        "domains": []
+      }
+    ]
+  },
+  "ownership": {
+    "workItemsTotal": 2,
+    "workItemsWithOwnership": 2,
+    "workItemsMissingOwnership": 0
+  },
+  "domains": [
+    "cli",
+    "repository-foundation"
+  ],
+  "workspace": {
+    "isGitRepo": true,
+    "root": "C:\\Users\\Admin\\Documents\\repos\\kaddo-test",
+    "branch": "feature/wi-001-project-scaffold",
+    "isWorktree": false
+  },
+  "layers": [
+    {
+      "layer": "Business",
+      "status": "Consolidated",
+      "detected": [
+        "business.md"
+      ]
+    },
+    {
+      "layer": "Product",
+      "status": "Consolidated",
+      "detected": [
+        "product.md"
+      ]
+    },
+    {
+      "layer": "Tech",
+      "status": "Structured",
+      "detected": [
+        "adr-001-tech-stack.md",
+        "adr-002-mvp-scope.md",
+        "codebase.md",
+        "knowledge.md"
+      ]
+    },
+    {
+      "layer": "Delivery",
+      "status": "Traceable",
+      "detected": [
+        "WI-001-initialize-typescript-cli-project.md",
+        "WI-002-initialize-typescript-cli-project.md",
+        "mvp-foundation.md",
+        "roadmap.md"
+      ]
+    }
+  ],
+  "roadmap": {
+    "present": true,
+    "candidates": 19,
+    "materialized": 2,
+    "remaining": 17
+  },
+  "missingKnowledge": [],
+  "suggestedNextSteps": [
+    "Materialize 17 roadmap candidate(s) with `kaddo create --from roadmap`."
+  ],
+  "mapped_modules": []
+}
