@@ -234,7 +234,7 @@ todoApp construira un MVP CLI pequeno para gestionar tareas y proyectos locales 
 
 ## Next Recommended Work Item
 
-Configurar persistencia SQLite base
+Implementar comandos basicos de tareas
 
 ------------------------
 Agent: roadmap-agent
