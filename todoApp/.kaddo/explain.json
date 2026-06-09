@@ -1,0 +1,154 @@
+{
+  "project": {
+    "name": "todoApp",
+    "state": "new",
+    "teamSize": "small",
+    "structure": "monorepo",
+    "language": "Spanish"
+  },
+  "stack": {
+    "language": "typescript",
+    "packageManager": "pnpm",
+    "sourceDirectories": [
+      "src"
+    ],
+    "migrationDirectories": [],
+    "contractFiles": [],
+    "infrastructureFiles": []
+  },
+  "knowledge": {
+    "hasScan": true,
+    "hasInventory": true,
+    "hasContextPack": true,
+    "hasUnderstand": true,
+    "hasCapabilities": true,
+    "hasArchitecture": true,
+    "hasRoadmap": true,
+    "hasAgents": true
+  },
+  "workItems": {
+    "total": 2,
+    "inProgress": 0,
+    "done": 0,
+    "cancelled": 0,
+    "byState": {
+      "draft": 0,
+      "ready": 0,
+      "in-progress": 0,
+      "blocked": 0,
+      "completed": 2,
+      "archived": 0
+    },
+    "byType": {
+      "work-item": 1,
+      "chore": 1
+    },
+    "initiatives": [
+      {
+        "name": "Fundacion tecnica del proyecto CLI",
+        "states": {
+          "draft": 0,
+          "ready": 0,
+          "in-progress": 0,
+          "blocked": 0,
+          "completed": 1,
+          "archived": 0
+        }
+      },
+      {
+        "name": "Unassigned",
+        "states": {
+          "draft": 0,
+          "ready": 0,
+          "in-progress": 0,
+          "blocked": 0,
+          "completed": 1,
+          "archived": 0
+        }
+      }
+    ],
+    "items": [
+      {
+        "id": "WI-001",
+        "title": "Inicializar proyecto TypeScript CLI",
+        "type": "work-item",
+        "status": "completed",
+        "lifecycle": "completed",
+        "initiative": "",
+        "knowledgeLevel": "K2",
+        "hasOwnership": true,
+        "domains": []
+      },
+      {
+        "id": "WI-002",
+        "title": "Configurar persistencia SQLite base",
+        "type": "chore",
+        "status": "completed",
+        "lifecycle": "completed",
+        "initiative": "Fundacion tecnica del proyecto CLI",
+        "knowledgeLevel": "K2",
+        "hasOwnership": true,
+        "domains": [
+          "Local Persistence"
+        ]
+      }
+    ]
+  },
+  "ownership": {
+    "workItemsTotal": 2,
+    "workItemsWithOwnership": 2,
+    "workItemsMissingOwnership": 0
+  },
+  "domains": [
+    "Local Persistence"
+  ],
+  "duplicateWorkItems": [],
+  "layers": [
+    {
+      "layer": "Business",
+      "status": "Consolidated",
+      "detected": [
+        "business.md"
+      ]
+    },
+    {
+      "layer": "Product",
+      "status": "Consolidated",
+      "detected": [
+        "product.md"
+      ]
+    },
+    {
+      "layer": "Tech",
+      "status": "Structured",
+      "detected": [
+        "adr-001-tech-stack.md",
+        "adr-002-mvp-scope.md",
+        "codebase.md",
+        "current-state.md",
+        "knowledge.md"
+      ]
+    },
+    {
+      "layer": "Delivery",
+      "status": "Traceable",
+      "detected": [
+        "WI-001-initialize-typescript-cli-project.md",
+        "WI-002-configurar-persistencia-sqlite-base.md",
+        "mvp-foundation.md",
+        "roadmap.md"
+      ]
+    }
+  ],
+  "roadmap": {
+    "present": true,
+    "candidates": 10,
+    "materialized": 2,
+    "remaining": 8
+  },
+  "missingKnowledge": [],
+  "suggestedNextSteps": [
+    "Materialize 8 roadmap candidate(s) with `kaddo create --from roadmap`."
+  ],
+  "mapped_modules": []
+}

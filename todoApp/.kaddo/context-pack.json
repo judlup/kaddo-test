@@ -1,0 +1,145 @@
+{
+  "version": "1",
+  "generatedAt": "2026-06-09T01:54:07.502Z",
+  "project": {
+    "name": "todoApp",
+    "state": "new",
+    "teamSize": "small",
+    "structure": "monorepo",
+    "language": "Spanish"
+  },
+  "scan": {
+    "available": true,
+    "languages": [
+      "typescript"
+    ],
+    "frameworks": [],
+    "packageManagers": [
+      "pnpm"
+    ],
+    "sourceDirectories": [
+      "src"
+    ],
+    "migrationDirectories": [],
+    "contractFiles": [],
+    "infrastructureFiles": []
+  },
+  "knowledge": {
+    "summary": "> Lo que es verdadero sobre el producto ahora.",
+    "roadmapSummary": "Generado con Kaddo Roadmap Agent. Las iniciativas y work items abajo son candidatos para revision humana; no son compromisos finales.",
+    "inventoryAvailable": true,
+    "workItems": [],
+    "artifacts": [
+      {
+        "id": "WI-001",
+        "type": "work-item",
+        "title": "Inicializar proyecto TypeScript CLI",
+        "summary": "",
+        "codeGlobs": [
+          "src/cli/**",
+          "src/database/**",
+          "src/modules/**",
+          "src/shared/**"
+        ]
+      },
+      {
+        "id": "WI-002",
+        "type": "chore",
+        "title": "Configurar persistencia SQLite base",
+        "summary": "Preparar la conexion local a SQLite y una estrategia minima de migraciones sin implementar todavia tablas de dominio.",
+        "codeGlobs": [
+          "package.json",
+          "pnpm-lock.yaml",
+          "src/database/**",
+          "tests/database/**"
+        ]
+      }
+    ]
+  },
+  "layers": [
+    {
+      "layer": "Business",
+      "status": "Consolidated",
+      "detected": [
+        "business.md"
+      ]
+    },
+    {
+      "layer": "Product",
+      "status": "Consolidated",
+      "detected": [
+        "product.md"
+      ]
+    },
+    {
+      "layer": "Tech",
+      "status": "Structured",
+      "detected": [
+        "adr-001-tech-stack.md",
+        "adr-002-mvp-scope.md",
+        "codebase.md",
+        "current-state.md",
+        "knowledge.md"
+      ]
+    },
+    {
+      "layer": "Delivery",
+      "status": "Traceable",
+      "detected": [
+        "WI-001-initialize-typescript-cli-project.md",
+        "WI-002-configurar-persistencia-sqlite-base.md",
+        "mvp-foundation.md",
+        "roadmap.md"
+      ]
+    }
+  ],
+  "roadmap": {
+    "present": true,
+    "candidates": 10,
+    "materialized": 2,
+    "remaining": 8
+  },
+  "phase": {
+    "phase": "Maintenance",
+    "reasons": [
+      "Roadmap available",
+      "2 materialized work item(s)",
+      "8 roadmap candidate(s) remaining",
+      "Ownership coverage 100%"
+    ],
+    "recommendedAgents": [
+      "kaddo create --from roadmap",
+      "work-item-agent"
+    ],
+    "nextStep": "Materialize 8 remaining roadmap candidate(s)",
+    "llmInstructions": [
+      "Materialize the remaining roadmap candidates.",
+      "Do not implement yet."
+    ]
+  },
+  "deliveryMix": {},
+  "mappedModules": [],
+  "missing": [
+    "No work items found."
+  ],
+  "handoff": {
+    "recommendedAgents": [
+      "kaddo create --from roadmap",
+      "work-item-agent"
+    ],
+    "nextSteps": [
+      "Materialize 8 remaining roadmap candidate(s)"
+    ],
+    "instructions": [
+      "Materialize the remaining roadmap candidates.",
+      "Do not implement yet."
+    ],
+    "operatingRules": [
+      "**Never run `git commit`, `git push` or `git merge` without explicit human confirmation.**",
+      "Never push or merge automatically — ever. Suggest a Conventional Commit message and wait.",
+      "When implementing a Work Item, create a branch FIRST (per the project Git strategy, `.kaddo/git.yml`, default `feature/<id>-<slug>`). Never work directly on `main`.",
+      "After significant changes run `kaddo scan`, `kaddo owners suggest` and `kaddo guard`, and update the affected knowledge (ADR / capabilities / current-state).",
+      "Kaddo itself never calls an LLM and never runs git — every git action is the human’s."
+    ]
+  }
+}
