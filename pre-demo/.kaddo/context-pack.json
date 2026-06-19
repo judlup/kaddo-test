@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "generatedAt": "2026-06-19T16:57:22.434Z",
+  "generatedAt": "2026-06-19T17:07:25.171Z",
   "project": {
     "name": "pre-demo",
     "state": "new",
@@ -82,15 +82,6 @@
         "lifecycle": "draft",
         "knowledgeLevel": "K2",
         "domains": []
-      },
-      {
-        "id": "WI-001",
-        "type": "chore",
-        "title": "Configuración Inicial del Proyecto TypeScript",
-        "status": "in-progress",
-        "lifecycle": "in-progress",
-        "knowledgeLevel": "K2",
-        "domains": []
       }
     ],
     "artifacts": [
@@ -159,46 +150,40 @@
     "reasons": [
       "Roadmap available",
       "7 materialized work item(s)",
-      "draft: 6, in-progress: 1",
+      "draft: 6",
       "Ownership coverage 14%"
     ],
     "recommendedAgents": [
-      "implementation-agent",
-      "kaddo scan",
-      "kaddo owners suggest",
-      "kaddo guard",
+      "work-item-agent",
       "kaddo owners suggest"
     ],
-    "nextStep": "Continue WI-001 — Configuración Inicial del Proyecto TypeScript; then run kaddo scan, owners suggest, guard",
+    "nextStep": "Refine WI-002 from draft to ready",
     "llmInstructions": [
-      "Continue the in-progress Work Item with the implementation-agent.",
-      "After changes, run `kaddo scan`, `kaddo owners suggest` and `kaddo guard`.",
-      "Do not commit, push or merge without explicit human confirmation.",
+      "Refine draft Work Items to ready.",
+      "Use the work-item-agent.",
+      "Do not implement unless the user explicitly asks.",
       "Ownership is incomplete — propose `code:` globs (run `kaddo owners suggest`)."
     ]
   },
   "deliveryMix": {
     "feat": 5,
-    "chore": 2
+    "chore": 1
   },
   "external": [],
   "mappedModules": [],
   "missing": [],
   "handoff": {
     "recommendedAgents": [
-      "implementation-agent",
-      "kaddo scan",
-      "kaddo owners suggest",
-      "kaddo guard",
+      "work-item-agent",
       "kaddo owners suggest"
     ],
     "nextSteps": [
-      "Continue WI-001 — Configuración Inicial del Proyecto TypeScript; then run kaddo scan, owners suggest, guard"
+      "Refine WI-002 from draft to ready"
     ],
     "instructions": [
-      "Continue the in-progress Work Item with the implementation-agent.",
-      "After changes, run `kaddo scan`, `kaddo owners suggest` and `kaddo guard`.",
-      "Do not commit, push or merge without explicit human confirmation.",
+      "Refine draft Work Items to ready.",
+      "Use the work-item-agent.",
+      "Do not implement unless the user explicitly asks.",
       "Ownership is incomplete — propose `code:` globs (run `kaddo owners suggest`)."
     ],
     "operatingRules": [

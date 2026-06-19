@@ -49,9 +49,9 @@
 ## Work Items
 - Draft: 6
 - Ready: 0
-- In Progress: 1
+- In Progress: 0
 - Blocked: 0
-- Completed: 0
+- Completed: 1
 - Archived: 0
 
 ## Work Items by Type
@@ -59,10 +59,7 @@
 - Chores: 2
 
 ## Work Items by Initiative
-- Foundational CLI TODO App — Draft: 6 · In Progress: 1
-
-## In Progress
-- ● WI-001 [K2] — Configuración Inicial del Proyecto TypeScript
+- Foundational CLI TODO App — Draft: 6 · Completed: 1
 
 ## Mapped Modules
 - Mapped modules: 0
@@ -72,9 +69,9 @@
 - Reason:
   - Roadmap available
   - 7 materialized work item(s)
-  - draft: 6, in-progress: 1
+  - draft: 6
   - Ownership coverage 14%
-- Next step: Continue WI-001 — Configuración Inicial del Proyecto TypeScript; then run kaddo scan, owners suggest, guard
+- Next step: Refine WI-002 from draft to ready
 
 ## Suggested Next Steps
 1. Run `kaddo owners suggest` for Work Items without code ownership.

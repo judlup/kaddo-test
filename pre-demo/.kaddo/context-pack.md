@@ -26,12 +26,12 @@ Reason:
 
 - Roadmap available
 - 7 materialized work item(s)
-- draft: 6, in-progress: 1
+- draft: 6
 - Ownership coverage 14%
 
-Recommended next: implementation-agent, kaddo scan, kaddo owners suggest, kaddo guard, kaddo owners suggest
+Recommended next: work-item-agent, kaddo owners suggest
 
-Next step: Continue WI-001 — Configuración Inicial del Proyecto TypeScript; then run kaddo scan, owners suggest, guard
+Next step: Refine WI-002 from draft to ready
 
 ## Knowledge Layers
 
@@ -88,14 +88,13 @@ Generado con Kaddo Roadmap Agent. Las iniciativas y los elementos de trabajo (wo
 - WI-005 [feat] [K2] (draft) — Comandos CLI para Gestión de Tareas
 - WI-006 [feat] [K2] (draft) — Comandos CLI para Gestión de Proyectos
 - WI-007 [chore] [K2] (draft) — Pruebas de Integración y Validación del Flujo Kaddo
-- WI-001 [chore] [K2] (in-progress) — Configuración Inicial del Proyecto TypeScript
 
 ## Delivery Mix
 
 Active Work Items by type:
 
 - Feats: 5
-- Chores: 2
+- Chores: 1
 
 ## Artifacts and Ownership
 
@@ -109,19 +108,16 @@ _None — all expected context is present._
 
 Recommended next for the **Active Delivery** phase:
 
-1. implementation-agent
-2. kaddo scan
-3. kaddo owners suggest
-4. kaddo guard
-5. kaddo owners suggest
+1. work-item-agent
+2. kaddo owners suggest
 
 Next step:
 
-- Continue WI-001 — Configuración Inicial del Proyecto TypeScript; then run kaddo scan, owners suggest, guard
+- Refine WI-002 from draft to ready
 
 ## Instructions for the LLM
 
-- Continue the in-progress Work Item with the implementation-agent.
-- After changes, run `kaddo scan`, `kaddo owners suggest` and `kaddo guard`.
-- Do not commit, push or merge without explicit human confirmation.
+- Refine draft Work Items to ready.
+- Use the work-item-agent.
+- Do not implement unless the user explicitly asks.
 - Ownership is incomplete — propose `code:` globs (run `kaddo owners suggest`).
