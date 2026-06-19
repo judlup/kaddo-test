@@ -29,11 +29,11 @@
   "workItems": {
     "total": 7,
     "inProgress": 0,
-    "done": 0,
+    "done": 1,
     "cancelled": 0,
     "byState": {
-      "draft": 6,
-      "ready": 0,
+      "draft": 5,
+      "ready": 1,
       "in-progress": 0,
       "blocked": 0,
       "completed": 1,
@@ -47,8 +47,8 @@
       {
         "name": "Foundational CLI TODO App",
         "states": {
-          "draft": 6,
-          "ready": 0,
+          "draft": 5,
+          "ready": 1,
           "in-progress": 0,
           "blocked": 0,
           "completed": 1,
@@ -61,22 +61,11 @@
         "id": "WI-001",
         "title": "Configuración Inicial del Proyecto TypeScript",
         "type": "chore",
-        "status": "completed",
+        "status": "done",
         "lifecycle": "completed",
         "initiative": "Foundational CLI TODO App",
         "knowledgeLevel": "K2",
         "hasOwnership": true,
-        "domains": []
-      },
-      {
-        "id": "WI-002",
-        "title": "Base de Datos SQLite y Migraciones",
-        "type": "feat",
-        "status": "draft",
-        "lifecycle": "draft",
-        "initiative": "Foundational CLI TODO App",
-        "knowledgeLevel": "K2",
-        "hasOwnership": false,
         "domains": []
       },
       {
@@ -133,17 +122,34 @@
         "knowledgeLevel": "K2",
         "hasOwnership": false,
         "domains": []
+      },
+      {
+        "id": "WI-002",
+        "title": "Base de Datos SQLite y Migraciones",
+        "type": "feat",
+        "status": "ready",
+        "lifecycle": "ready",
+        "initiative": "Foundational CLI TODO App",
+        "knowledgeLevel": "K2",
+        "hasOwnership": true,
+        "domains": []
       }
     ]
   },
   "ownership": {
     "workItemsTotal": 7,
-    "workItemsWithOwnership": 1,
-    "workItemsMissingOwnership": 6
+    "workItemsWithOwnership": 2,
+    "workItemsMissingOwnership": 5
   },
   "domains": [],
   "duplicateWorkItems": [],
   "externalCapsules": [],
+  "graph": {
+    "generatedAt": "2026-06-19T18:29:32.328Z",
+    "nodes": 17,
+    "edges": 15,
+    "activeWorkItemsConnectedToCode": 0
+  },
   "layers": [
     {
       "layer": "Business",

@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "generatedAt": "2026-06-19T17:07:25.171Z",
+  "generatedAt": "2026-06-19T19:01:59.068Z",
   "project": {
     "name": "pre-demo",
     "state": "new",
@@ -29,15 +29,6 @@
     "roadmapSummary": "Generado con Kaddo Roadmap Agent. Las iniciativas y los elementos de trabajo (work items) a continuación son **candidatos** para revisión humana — no compromisos finales.",
     "inventoryAvailable": true,
     "workItems": [
-      {
-        "id": "WI-002",
-        "type": "feat",
-        "title": "Base de Datos SQLite y Migraciones",
-        "status": "draft",
-        "lifecycle": "draft",
-        "knowledgeLevel": "K2",
-        "domains": []
-      },
       {
         "id": "WI-003",
         "type": "feat",
@@ -82,6 +73,15 @@
         "lifecycle": "draft",
         "knowledgeLevel": "K2",
         "domains": []
+      },
+      {
+        "id": "WI-002",
+        "type": "feat",
+        "title": "Base de Datos SQLite y Migraciones",
+        "status": "ready",
+        "lifecycle": "ready",
+        "knowledgeLevel": "K2",
+        "domains": []
       }
     ],
     "artifacts": [
@@ -96,6 +96,16 @@
           "vitest.config.ts",
           "src/cli/index.ts",
           "src/cli/index.test.ts"
+        ]
+      },
+      {
+        "id": "WI-002",
+        "type": "feat",
+        "title": "Base de Datos SQLite y Migraciones",
+        "summary": "Configurar la conexión local SQLite y crear las tablas iniciales de tareas y proyectos mediante migraciones.",
+        "codeGlobs": [
+          "src/database/connection.ts",
+          "src/database/migrations/**/*"
         ]
       }
     ]
@@ -150,18 +160,18 @@
     "reasons": [
       "Roadmap available",
       "7 materialized work item(s)",
-      "draft: 6",
-      "Ownership coverage 14%"
+      "draft: 5, ready: 1",
+      "Ownership coverage 29%"
     ],
     "recommendedAgents": [
-      "work-item-agent",
+      "implementation-agent",
       "kaddo owners suggest"
     ],
-    "nextStep": "Refine WI-002 from draft to ready",
+    "nextStep": "Start WI-002 — Base de Datos SQLite y Migraciones (ready → in-progress)",
     "llmInstructions": [
-      "Refine draft Work Items to ready.",
-      "Use the work-item-agent.",
-      "Do not implement unless the user explicitly asks.",
+      "Use the implementation-agent.",
+      "Suggest a branch name only.",
+      "Do not run git commands.",
       "Ownership is incomplete — propose `code:` globs (run `kaddo owners suggest`)."
     ]
   },
@@ -170,20 +180,26 @@
     "chore": 1
   },
   "external": [],
+  "graph": {
+    "generatedAt": "2026-06-19T18:29:32.328Z",
+    "nodes": 17,
+    "edges": 15,
+    "activeWorkItemsConnectedToCode": 0
+  },
   "mappedModules": [],
   "missing": [],
   "handoff": {
     "recommendedAgents": [
-      "work-item-agent",
+      "implementation-agent",
       "kaddo owners suggest"
     ],
     "nextSteps": [
-      "Refine WI-002 from draft to ready"
+      "Start WI-002 — Base de Datos SQLite y Migraciones (ready → in-progress)"
     ],
     "instructions": [
-      "Refine draft Work Items to ready.",
-      "Use the work-item-agent.",
-      "Do not implement unless the user explicitly asks.",
+      "Use the implementation-agent.",
+      "Suggest a branch name only.",
+      "Do not run git commands.",
       "Ownership is incomplete — propose `code:` globs (run `kaddo owners suggest`)."
     ],
     "operatingRules": [

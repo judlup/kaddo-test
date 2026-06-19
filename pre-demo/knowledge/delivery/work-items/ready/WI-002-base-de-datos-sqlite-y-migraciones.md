@@ -3,11 +3,11 @@ type: feat
 id: WI-002
 title: "Base de Datos SQLite y Migraciones"
 knowledge_level: K2
-status: draft
+status: ready
 phase: now
 initiative: "Foundational CLI TODO App"
 domains: []
-code: []
+code: ["src/database/connection.ts", "src/database/migrations/**/*"]
 created_at: 2026-06-19
 source: roadmap
 source_id: WI-CANDIDATE-002

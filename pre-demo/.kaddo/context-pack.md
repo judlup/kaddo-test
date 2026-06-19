@@ -26,12 +26,12 @@ Reason:
 
 - Roadmap available
 - 7 materialized work item(s)
-- draft: 6
-- Ownership coverage 14%
+- draft: 5, ready: 1
+- Ownership coverage 29%
 
-Recommended next: work-item-agent, kaddo owners suggest
+Recommended next: implementation-agent, kaddo owners suggest
 
-Next step: Refine WI-002 from draft to ready
+Next step: Start WI-002 — Base de Datos SQLite y Migraciones (ready → in-progress)
 
 ## Knowledge Layers
 
@@ -82,12 +82,12 @@ Generado con Kaddo Roadmap Agent. Las iniciativas y los elementos de trabajo (wo
 
 ## Active Work Items
 
-- WI-002 [feat] [K2] (draft) — Base de Datos SQLite y Migraciones
 - WI-003 [feat] [K2] (draft) — Módulo de Gestión de Tareas
 - WI-004 [feat] [K2] (draft) — Módulo de Gestión de Proyectos
 - WI-005 [feat] [K2] (draft) — Comandos CLI para Gestión de Tareas
 - WI-006 [feat] [K2] (draft) — Comandos CLI para Gestión de Proyectos
 - WI-007 [chore] [K2] (draft) — Pruebas de Integración y Validación del Flujo Kaddo
+- WI-002 [feat] [K2] (ready) — Base de Datos SQLite y Migraciones
 
 ## Delivery Mix
 
@@ -99,6 +99,16 @@ Active Work Items by type:
 ## Artifacts and Ownership
 
 - WI-001 [chore] owns: package.json, tsconfig.json, vitest.config.ts, src/cli/index.ts, src/cli/index.test.ts
+- WI-002 [feat] owns: src/database/connection.ts, src/database/migrations/**/*
+
+## Knowledge Graph
+
+- Available: yes
+- Nodes: 17
+- Edges: 15
+- Active Work Items connected to code: 0
+
+Full graph: `.kaddo/graph.json` / `.kaddo/graph.mmd` (run `kaddo graph export` to refresh).
 
 ## Missing Context
 
@@ -108,16 +118,16 @@ _None — all expected context is present._
 
 Recommended next for the **Active Delivery** phase:
 
-1. work-item-agent
+1. implementation-agent
 2. kaddo owners suggest
 
 Next step:
 
-- Refine WI-002 from draft to ready
+- Start WI-002 — Base de Datos SQLite y Migraciones (ready → in-progress)
 
 ## Instructions for the LLM
 
-- Refine draft Work Items to ready.
-- Use the work-item-agent.
-- Do not implement unless the user explicitly asks.
+- Use the implementation-agent.
+- Suggest a branch name only.
+- Do not run git commands.
 - Ownership is incomplete — propose `code:` globs (run `kaddo owners suggest`).

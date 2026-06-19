@@ -44,11 +44,11 @@
 - Agents: available
 - Roadmap candidates: 7
 - Materialized work items: 7
-- Ownership coverage: 1/7 work items
+- Ownership coverage: 2/7 work items
 
 ## Work Items
-- Draft: 6
-- Ready: 0
+- Draft: 5
+- Ready: 1
 - In Progress: 0
 - Blocked: 0
 - Completed: 1
@@ -59,19 +59,24 @@
 - Chores: 2
 
 ## Work Items by Initiative
-- Foundational CLI TODO App — Draft: 6 · Completed: 1
+- Foundational CLI TODO App — Draft: 5 · Ready: 1 · Completed: 1
 
 ## Mapped Modules
 - Mapped modules: 0
+
+## Knowledge Graph
+- Nodes: 17
+- Edges: 15
+- Last exported: 2026-06-19T18:29:32.328Z
 
 ## Phase
 - Phase: Active Delivery
 - Reason:
   - Roadmap available
   - 7 materialized work item(s)
-  - draft: 6
-  - Ownership coverage 14%
-- Next step: Refine WI-002 from draft to ready
+  - draft: 5, ready: 1
+  - Ownership coverage 29%
+- Next step: Start WI-002 — Base de Datos SQLite y Migraciones (ready → in-progress)
 
 ## Suggested Next Steps
 1. Run `kaddo owners suggest` for Work Items without code ownership.

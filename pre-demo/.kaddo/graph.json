@@ -1,0 +1,194 @@
+{
+  "generated_at": "2026-06-19T18:29:32.328Z",
+  "project": {
+    "name": "pre-demo",
+    "state": "new",
+    "structure": "monorepo"
+  },
+  "nodes": [
+    {
+      "id": "business:business",
+      "type": "business",
+      "label": "Business",
+      "path": "knowledge/business/business.md"
+    },
+    {
+      "id": "product:product",
+      "type": "product",
+      "label": "Product",
+      "path": "knowledge/product/product.md"
+    },
+    {
+      "id": "tech:tech",
+      "type": "tech",
+      "label": "Tech",
+      "path": "knowledge/tech/current-state.md"
+    },
+    {
+      "id": "delivery:delivery",
+      "type": "delivery",
+      "label": "Delivery",
+      "path": "knowledge/delivery/roadmap.md"
+    },
+    {
+      "id": "wi:WI-002",
+      "type": "work-item",
+      "label": "WI-002 Base de Datos SQLite y Migraciones",
+      "path": "knowledge/delivery/work-items/draft/WI-002-base-de-datos-sqlite-y-migraciones.md",
+      "status": "draft",
+      "knowledge_level": "K2"
+    },
+    {
+      "id": "initiative:foundational-cli-todo-app",
+      "type": "initiative",
+      "label": "Foundational CLI TODO App"
+    },
+    {
+      "id": "candidate:WI-CANDIDATE-002",
+      "type": "roadmap-candidate",
+      "label": "WI-CANDIDATE-002"
+    },
+    {
+      "id": "wi:WI-003",
+      "type": "work-item",
+      "label": "WI-003 Módulo de Gestión de Tareas",
+      "path": "knowledge/delivery/work-items/draft/WI-003-m-dulo-de-gesti-n-de-tareas.md",
+      "status": "draft",
+      "knowledge_level": "K2"
+    },
+    {
+      "id": "candidate:WI-CANDIDATE-003",
+      "type": "roadmap-candidate",
+      "label": "WI-CANDIDATE-003"
+    },
+    {
+      "id": "wi:WI-004",
+      "type": "work-item",
+      "label": "WI-004 Módulo de Gestión de Proyectos",
+      "path": "knowledge/delivery/work-items/draft/WI-004-m-dulo-de-gesti-n-de-proyectos.md",
+      "status": "draft",
+      "knowledge_level": "K2"
+    },
+    {
+      "id": "candidate:WI-CANDIDATE-004",
+      "type": "roadmap-candidate",
+      "label": "WI-CANDIDATE-004"
+    },
+    {
+      "id": "wi:WI-005",
+      "type": "work-item",
+      "label": "WI-005 Comandos CLI para Gestión de Tareas",
+      "path": "knowledge/delivery/work-items/draft/WI-005-comandos-cli-para-gesti-n-de-tareas.md",
+      "status": "draft",
+      "knowledge_level": "K2"
+    },
+    {
+      "id": "candidate:WI-CANDIDATE-005",
+      "type": "roadmap-candidate",
+      "label": "WI-CANDIDATE-005"
+    },
+    {
+      "id": "wi:WI-006",
+      "type": "work-item",
+      "label": "WI-006 Comandos CLI para Gestión de Proyectos",
+      "path": "knowledge/delivery/work-items/draft/WI-006-comandos-cli-para-gesti-n-de-proyectos.md",
+      "status": "draft",
+      "knowledge_level": "K2"
+    },
+    {
+      "id": "candidate:WI-CANDIDATE-006",
+      "type": "roadmap-candidate",
+      "label": "WI-CANDIDATE-006"
+    },
+    {
+      "id": "wi:WI-007",
+      "type": "work-item",
+      "label": "WI-007 Pruebas de Integración y Validación del Flujo Kaddo",
+      "path": "knowledge/delivery/work-items/draft/WI-007-pruebas-de-integraci-n-y-validaci-n-del-flujo-kadd.md",
+      "status": "draft",
+      "knowledge_level": "K2"
+    },
+    {
+      "id": "candidate:WI-CANDIDATE-007",
+      "type": "roadmap-candidate",
+      "label": "WI-CANDIDATE-007"
+    }
+  ],
+  "edges": [
+    {
+      "from": "business:business",
+      "to": "product:product",
+      "type": "informs"
+    },
+    {
+      "from": "product:product",
+      "to": "tech:tech",
+      "type": "informs"
+    },
+    {
+      "from": "tech:tech",
+      "to": "delivery:delivery",
+      "type": "informs"
+    },
+    {
+      "from": "wi:WI-002",
+      "to": "initiative:foundational-cli-todo-app",
+      "type": "belongs_to"
+    },
+    {
+      "from": "candidate:WI-CANDIDATE-002",
+      "to": "wi:WI-002",
+      "type": "materialized_as"
+    },
+    {
+      "from": "wi:WI-003",
+      "to": "initiative:foundational-cli-todo-app",
+      "type": "belongs_to"
+    },
+    {
+      "from": "candidate:WI-CANDIDATE-003",
+      "to": "wi:WI-003",
+      "type": "materialized_as"
+    },
+    {
+      "from": "wi:WI-004",
+      "to": "initiative:foundational-cli-todo-app",
+      "type": "belongs_to"
+    },
+    {
+      "from": "candidate:WI-CANDIDATE-004",
+      "to": "wi:WI-004",
+      "type": "materialized_as"
+    },
+    {
+      "from": "wi:WI-005",
+      "to": "initiative:foundational-cli-todo-app",
+      "type": "belongs_to"
+    },
+    {
+      "from": "candidate:WI-CANDIDATE-005",
+      "to": "wi:WI-005",
+      "type": "materialized_as"
+    },
+    {
+      "from": "wi:WI-006",
+      "to": "initiative:foundational-cli-todo-app",
+      "type": "belongs_to"
+    },
+    {
+      "from": "candidate:WI-CANDIDATE-006",
+      "to": "wi:WI-006",
+      "type": "materialized_as"
+    },
+    {
+      "from": "wi:WI-007",
+      "to": "initiative:foundational-cli-todo-app",
+      "type": "belongs_to"
+    },
+    {
+      "from": "candidate:WI-CANDIDATE-007",
+      "to": "wi:WI-007",
+      "type": "materialized_as"
+    }
+  ]
+}
