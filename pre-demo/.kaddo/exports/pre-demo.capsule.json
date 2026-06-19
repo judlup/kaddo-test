@@ -3,16 +3,47 @@
   "system": "pre-demo",
   "version": 1,
   "updatedAt": "2026-06-19",
-  "owner": "unknown",
+  "owner": "small-team",
   "sourceProject": "pre-demo",
-  "purpose": "Los desarrolladores a menudo comienzan nuevos proyectos escribiendo código antes de aclarar el problema, el alcance del producto, la base técnica, la hoja de ruta (roadmap) y los elementos de trabajo (work items).",
-  "responsibilities": [],
-  "capabilities": [],
-  "contracts": [],
-  "dependencies": [],
-  "knownRisks": [],
-  "adrs": [],
-  "owners": [],
-  "outOfScope": [],
-  "usageNotes": []
+  "purpose": "El proyecto pre-demo es una aplicación CLI liviana respaldada por SQLite para gestionar tareas y proyectos localmente. Su principal propósito es validar la metodología de Desarrollo Guiado por Conocimiento (Knowledge Driven Development) utilizando Kaddo.",
+  "responsibilities": [
+    "Proveer una interfaz de comandos interactiva y fácil de usar en la terminal del sistema para gestionar tareas y proyectos.",
+    "Validar las reglas del negocio de tareas y proyectos antes de su almacenamiento.",
+    "Persistir los datos del usuario localmente de manera consistente y relacional.",
+    "Permitir la eliminación lógica de tareas (soft delete) para conservar históricos de uso."
+  ],
+  "capabilities": [
+    "CLI Interaction: Interfaz de línea de comandos estructurada con Commander.js para interactuar de forma intuitiva con el sistema.",
+    "Task Management: Operaciones completas CRUD sobre tareas locales (creación, listado, actualización y borrado lógico).",
+    "Project Management: Operaciones básicas para la creación de proyectos y agrupación relacional de tareas.",
+    "Local Persistence: Almacenamiento rápido en base de datos local SQLite mediante @libsql/client sin requerir conexión externa."
+  ],
+  "contracts": [
+    "Interfaz CLI ejecutable localmente mediante Node.js: todo task y todo project"
+  ],
+  "dependencies": [
+    "Node.js (v18+)",
+    "@libsql/client (SQLite)"
+  ],
+  "knownRisks": [
+    "Incompatibilidad menor si el entorno de ejecución local carece de soporte Node.js moderno con ESM."
+  ],
+  "adrs": [
+    "Selección de SQLite y @libsql/client para persistencia relacional local autónoma.",
+    "Mapeo modular estructurado por capacidades de dominio en lugar de arquitectura MVC global.",
+    "Uso de eliminación lógica mediante el campo deleted_at para mantener registros históricos."
+  ],
+  "owners": [
+    "Pequeño equipo de desarrollo (Small Team)"
+  ],
+  "outOfScope": [
+    "Autenticación o control de acceso de usuarios.",
+    "Persistencia distribuida o sincronización en la nube.",
+    "Interfaz gráfica web o APIs de red públicas.",
+    "Colaboración multiusuario en tiempo real."
+  ],
+  "usageNotes": [
+    "Compilar el proyecto ejecutando: npm run build",
+    "Iniciar la ayuda de la CLI mediante: npm run start -- --help"
+  ]
 }
