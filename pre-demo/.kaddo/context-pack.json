@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "generatedAt": "2026-06-19T19:01:59.068Z",
+  "generatedAt": "2026-06-19T19:18:56.794Z",
   "project": {
     "name": "pre-demo",
     "state": "new",
@@ -181,10 +181,23 @@
   },
   "external": [],
   "graph": {
-    "generatedAt": "2026-06-19T18:29:32.328Z",
-    "nodes": 17,
-    "edges": 15,
-    "activeWorkItemsConnectedToCode": 0
+    "generatedAt": "2026-06-19T19:15:38.016Z",
+    "nodes": 19,
+    "edges": 17,
+    "activeWorkItemsConnectedToCode": 1
+  },
+  "graphHints": {
+    "quality": "partial",
+    "totalHints": 6,
+    "activeWorkItemHints": 6,
+    "messages": [
+      "WI-003 has no code ownership, linked capability, linked decision.",
+      "WI-004 has no code ownership, linked capability, linked decision.",
+      "WI-005 has no code ownership, linked capability, linked decision.",
+      "WI-006 has no code ownership, linked capability, linked decision.",
+      "WI-007 has no code ownership, linked capability, linked decision.",
+      "WI-002 has no linked capability, linked decision."
+    ]
   },
   "mappedModules": [],
   "missing": [],

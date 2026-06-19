@@ -1,0 +1,18 @@
+{
+  "type": "knowledge-capsule",
+  "system": "pre-demo",
+  "version": 1,
+  "updatedAt": "2026-06-19",
+  "owner": "unknown",
+  "sourceProject": "pre-demo",
+  "purpose": "Los desarrolladores a menudo comienzan nuevos proyectos escribiendo código antes de aclarar el problema, el alcance del producto, la base técnica, la hoja de ruta (roadmap) y los elementos de trabajo (work items).",
+  "responsibilities": [],
+  "capabilities": [],
+  "contracts": [],
+  "dependencies": [],
+  "knownRisks": [],
+  "adrs": [],
+  "owners": [],
+  "outOfScope": [],
+  "usageNotes": []
+}

@@ -104,11 +104,23 @@ Active Work Items by type:
 ## Knowledge Graph
 
 - Available: yes
-- Nodes: 17
-- Edges: 15
-- Active Work Items connected to code: 0
+- Nodes: 19
+- Edges: 17
+- Active Work Items connected to code: 1
 
 Full graph: `.kaddo/graph.json` / `.kaddo/graph.mmd` (run `kaddo graph export` to refresh).
+
+## Graph Hints
+
+Graph relationship quality: partial
+Active hints: 6
+Suggested agent: graph-agent
+
+- WI-003 has no code ownership, linked capability, linked decision.
+- WI-004 has no code ownership, linked capability, linked decision.
+- WI-005 has no code ownership, linked capability, linked decision.
+
+(+3 more in `.kaddo/graph-hints.md`)
 
 ## Missing Context
 

@@ -65,9 +65,11 @@
 - Mapped modules: 0
 
 ## Knowledge Graph
-- Nodes: 17
-- Edges: 15
-- Last exported: 2026-06-19T18:29:32.328Z
+- Nodes: 19
+- Edges: 17
+- Quality: partial
+- Hints: 6
+- Last exported: 2026-06-19T19:15:38.016Z
 
 ## Phase
 - Phase: Active Delivery

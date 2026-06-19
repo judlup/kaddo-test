@@ -145,10 +145,23 @@
   "duplicateWorkItems": [],
   "externalCapsules": [],
   "graph": {
-    "generatedAt": "2026-06-19T18:29:32.328Z",
-    "nodes": 17,
-    "edges": 15,
-    "activeWorkItemsConnectedToCode": 0
+    "generatedAt": "2026-06-19T19:15:38.016Z",
+    "nodes": 19,
+    "edges": 17,
+    "activeWorkItemsConnectedToCode": 1
+  },
+  "graphHints": {
+    "quality": "partial",
+    "totalHints": 6,
+    "activeWorkItemHints": 6,
+    "messages": [
+      "WI-003 has no code ownership, linked capability, linked decision.",
+      "WI-004 has no code ownership, linked capability, linked decision.",
+      "WI-005 has no code ownership, linked capability, linked decision.",
+      "WI-006 has no code ownership, linked capability, linked decision.",
+      "WI-007 has no code ownership, linked capability, linked decision.",
+      "WI-002 has no linked capability, linked decision."
+    ]
   },
   "layers": [
     {
