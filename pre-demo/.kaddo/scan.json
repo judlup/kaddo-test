@@ -1,0 +1,34 @@
+{
+  "version": "1",
+  "generatedAt": "2026-06-19T16:56:26.522Z",
+  "project": {
+    "state": "new",
+    "structure": "monorepo",
+    "teamSize": "small"
+  },
+  "detected": {
+    "languages": [
+      "typescript"
+    ],
+    "frameworks": [],
+    "packageManagers": [
+      "npm"
+    ],
+    "sourceDirectories": [
+      "src"
+    ],
+    "migrationDirectories": [],
+    "contractFiles": [],
+    "infrastructureFiles": [],
+    "testDirectories": []
+  },
+  "suggestions": {
+    "possibleDomains": [
+      "cli"
+    ],
+    "openQuestions": [
+      "Confirm whether the 'cli' domain reflects a real bounded context.",
+      "No test directory detected — confirm how this project is tested."
+    ]
+  }
+}

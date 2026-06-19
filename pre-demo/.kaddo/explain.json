@@ -1,0 +1,197 @@
+{
+  "project": {
+    "name": "pre-demo",
+    "state": "new",
+    "teamSize": "small",
+    "structure": "monorepo",
+    "language": "Spanish"
+  },
+  "stack": {
+    "language": "typescript",
+    "packageManager": "npm",
+    "sourceDirectories": [
+      "src"
+    ],
+    "migrationDirectories": [],
+    "contractFiles": [],
+    "infrastructureFiles": []
+  },
+  "knowledge": {
+    "hasScan": true,
+    "hasInventory": true,
+    "hasContextPack": true,
+    "hasUnderstand": true,
+    "hasCapabilities": true,
+    "hasArchitecture": true,
+    "hasRoadmap": true,
+    "hasAgents": true
+  },
+  "workItems": {
+    "total": 7,
+    "inProgress": 1,
+    "done": 0,
+    "cancelled": 0,
+    "byState": {
+      "draft": 6,
+      "ready": 0,
+      "in-progress": 1,
+      "blocked": 0,
+      "completed": 0,
+      "archived": 0
+    },
+    "byType": {
+      "feat": 5,
+      "chore": 2
+    },
+    "initiatives": [
+      {
+        "name": "Foundational CLI TODO App",
+        "states": {
+          "draft": 6,
+          "ready": 0,
+          "in-progress": 1,
+          "blocked": 0,
+          "completed": 0,
+          "archived": 0
+        }
+      }
+    ],
+    "items": [
+      {
+        "id": "WI-002",
+        "title": "Base de Datos SQLite y Migraciones",
+        "type": "feat",
+        "status": "draft",
+        "lifecycle": "draft",
+        "initiative": "Foundational CLI TODO App",
+        "knowledgeLevel": "K2",
+        "hasOwnership": false,
+        "domains": []
+      },
+      {
+        "id": "WI-003",
+        "title": "Módulo de Gestión de Tareas",
+        "type": "feat",
+        "status": "draft",
+        "lifecycle": "draft",
+        "initiative": "Foundational CLI TODO App",
+        "knowledgeLevel": "K2",
+        "hasOwnership": false,
+        "domains": []
+      },
+      {
+        "id": "WI-004",
+        "title": "Módulo de Gestión de Proyectos",
+        "type": "feat",
+        "status": "draft",
+        "lifecycle": "draft",
+        "initiative": "Foundational CLI TODO App",
+        "knowledgeLevel": "K2",
+        "hasOwnership": false,
+        "domains": []
+      },
+      {
+        "id": "WI-005",
+        "title": "Comandos CLI para Gestión de Tareas",
+        "type": "feat",
+        "status": "draft",
+        "lifecycle": "draft",
+        "initiative": "Foundational CLI TODO App",
+        "knowledgeLevel": "K2",
+        "hasOwnership": false,
+        "domains": []
+      },
+      {
+        "id": "WI-006",
+        "title": "Comandos CLI para Gestión de Proyectos",
+        "type": "feat",
+        "status": "draft",
+        "lifecycle": "draft",
+        "initiative": "Foundational CLI TODO App",
+        "knowledgeLevel": "K2",
+        "hasOwnership": false,
+        "domains": []
+      },
+      {
+        "id": "WI-007",
+        "title": "Pruebas de Integración y Validación del Flujo Kaddo",
+        "type": "chore",
+        "status": "draft",
+        "lifecycle": "draft",
+        "initiative": "Foundational CLI TODO App",
+        "knowledgeLevel": "K2",
+        "hasOwnership": false,
+        "domains": []
+      },
+      {
+        "id": "WI-001",
+        "title": "Configuración Inicial del Proyecto TypeScript",
+        "type": "chore",
+        "status": "in-progress",
+        "lifecycle": "in-progress",
+        "initiative": "Foundational CLI TODO App",
+        "knowledgeLevel": "K2",
+        "hasOwnership": true,
+        "domains": []
+      }
+    ]
+  },
+  "ownership": {
+    "workItemsTotal": 7,
+    "workItemsWithOwnership": 1,
+    "workItemsMissingOwnership": 6
+  },
+  "domains": [],
+  "duplicateWorkItems": [],
+  "externalCapsules": [],
+  "layers": [
+    {
+      "layer": "Business",
+      "status": "Consolidated",
+      "detected": [
+        "business.md"
+      ]
+    },
+    {
+      "layer": "Product",
+      "status": "Consolidated",
+      "detected": [
+        "product.md"
+      ]
+    },
+    {
+      "layer": "Tech",
+      "status": "Structured",
+      "detected": [
+        "codebase.md",
+        "current-state.md",
+        "knowledge.md"
+      ]
+    },
+    {
+      "layer": "Delivery",
+      "status": "Traceable",
+      "detected": [
+        "WI-001-configuraci-n-inicial-del-proyecto-typescript.md",
+        "WI-002-base-de-datos-sqlite-y-migraciones.md",
+        "WI-003-m-dulo-de-gesti-n-de-tareas.md",
+        "WI-004-m-dulo-de-gesti-n-de-proyectos.md",
+        "WI-005-comandos-cli-para-gesti-n-de-tareas.md",
+        "WI-006-comandos-cli-para-gesti-n-de-proyectos.md",
+        "WI-007-pruebas-de-integraci-n-y-validaci-n-del-flujo-kadd.md",
+        "roadmap.md"
+      ]
+    }
+  ],
+  "roadmap": {
+    "present": true,
+    "candidates": 7,
+    "materialized": 7,
+    "remaining": 0
+  },
+  "missingKnowledge": [],
+  "suggestedNextSteps": [
+    "Run `kaddo owners suggest` for Work Items without code ownership."
+  ],
+  "mapped_modules": []
+}
