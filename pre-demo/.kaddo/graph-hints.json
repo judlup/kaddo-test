@@ -1,0 +1,162 @@
+{
+  "generated_at": "2026-06-19T19:15:38.039Z",
+  "quality": "partial",
+  "summary": {
+    "nodes": 19,
+    "edges": 17,
+    "hints": 6
+  },
+  "metrics": {
+    "nodes_count": 19,
+    "edges_count": 17,
+    "connected_nodes_count": 19,
+    "isolated_nodes_count": 0,
+    "active_work_items_without_code": 5,
+    "active_work_items_without_capabilities": 6,
+    "work_items_without_source": 0,
+    "adrs_without_code": 0,
+    "capsules_without_related_work_items": 0
+  },
+  "hints": [
+    {
+      "artifact_id": "WI-003",
+      "artifact_type": "work-item",
+      "path": "knowledge/delivery/work-items/draft/WI-003-m-dulo-de-gesti-n-de-tareas.md",
+      "severity": "info",
+      "missing": [
+        "code",
+        "capabilities",
+        "decisions"
+      ],
+      "reason": "Active Work Item has limited graph relationships.",
+      "message": "WI-003 has no code ownership, linked capability, linked decision.",
+      "suggested_front_matter": {
+        "code": [
+          "src/<area>/**"
+        ],
+        "capabilities": [
+          "<capability>"
+        ],
+        "decisions": [
+          "ADR-XXX"
+        ]
+      }
+    },
+    {
+      "artifact_id": "WI-004",
+      "artifact_type": "work-item",
+      "path": "knowledge/delivery/work-items/draft/WI-004-m-dulo-de-gesti-n-de-proyectos.md",
+      "severity": "info",
+      "missing": [
+        "code",
+        "capabilities",
+        "decisions"
+      ],
+      "reason": "Active Work Item has limited graph relationships.",
+      "message": "WI-004 has no code ownership, linked capability, linked decision.",
+      "suggested_front_matter": {
+        "code": [
+          "src/<area>/**"
+        ],
+        "capabilities": [
+          "<capability>"
+        ],
+        "decisions": [
+          "ADR-XXX"
+        ]
+      }
+    },
+    {
+      "artifact_id": "WI-005",
+      "artifact_type": "work-item",
+      "path": "knowledge/delivery/work-items/draft/WI-005-comandos-cli-para-gesti-n-de-tareas.md",
+      "severity": "info",
+      "missing": [
+        "code",
+        "capabilities",
+        "decisions"
+      ],
+      "reason": "Active Work Item has limited graph relationships.",
+      "message": "WI-005 has no code ownership, linked capability, linked decision.",
+      "suggested_front_matter": {
+        "code": [
+          "src/<area>/**"
+        ],
+        "capabilities": [
+          "<capability>"
+        ],
+        "decisions": [
+          "ADR-XXX"
+        ]
+      }
+    },
+    {
+      "artifact_id": "WI-006",
+      "artifact_type": "work-item",
+      "path": "knowledge/delivery/work-items/draft/WI-006-comandos-cli-para-gesti-n-de-proyectos.md",
+      "severity": "info",
+      "missing": [
+        "code",
+        "capabilities",
+        "decisions"
+      ],
+      "reason": "Active Work Item has limited graph relationships.",
+      "message": "WI-006 has no code ownership, linked capability, linked decision.",
+      "suggested_front_matter": {
+        "code": [
+          "src/<area>/**"
+        ],
+        "capabilities": [
+          "<capability>"
+        ],
+        "decisions": [
+          "ADR-XXX"
+        ]
+      }
+    },
+    {
+      "artifact_id": "WI-007",
+      "artifact_type": "work-item",
+      "path": "knowledge/delivery/work-items/draft/WI-007-pruebas-de-integraci-n-y-validaci-n-del-flujo-kadd.md",
+      "severity": "info",
+      "missing": [
+        "code",
+        "capabilities",
+        "decisions"
+      ],
+      "reason": "Active Work Item has limited graph relationships.",
+      "message": "WI-007 has no code ownership, linked capability, linked decision.",
+      "suggested_front_matter": {
+        "code": [
+          "src/<area>/**"
+        ],
+        "capabilities": [
+          "<capability>"
+        ],
+        "decisions": [
+          "ADR-XXX"
+        ]
+      }
+    },
+    {
+      "artifact_id": "WI-002",
+      "artifact_type": "work-item",
+      "path": "knowledge/delivery/work-items/ready/WI-002-base-de-datos-sqlite-y-migraciones.md",
+      "severity": "info",
+      "missing": [
+        "capabilities",
+        "decisions"
+      ],
+      "reason": "Active Work Item has limited graph relationships.",
+      "message": "WI-002 has no linked capability, linked decision.",
+      "suggested_front_matter": {
+        "capabilities": [
+          "<capability>"
+        ],
+        "decisions": [
+          "ADR-XXX"
+        ]
+      }
+    }
+  ]
+}

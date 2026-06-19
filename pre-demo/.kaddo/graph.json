@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19T18:29:32.328Z",
+  "generated_at": "2026-06-19T19:15:38.016Z",
   "project": {
     "name": "pre-demo",
     "state": "new",
@@ -31,10 +31,10 @@
       "path": "knowledge/delivery/roadmap.md"
     },
     {
-      "id": "wi:WI-002",
+      "id": "wi:WI-003",
       "type": "work-item",
-      "label": "WI-002 Base de Datos SQLite y Migraciones",
-      "path": "knowledge/delivery/work-items/draft/WI-002-base-de-datos-sqlite-y-migraciones.md",
+      "label": "WI-003 Módulo de Gestión de Tareas",
+      "path": "knowledge/delivery/work-items/draft/WI-003-m-dulo-de-gesti-n-de-tareas.md",
       "status": "draft",
       "knowledge_level": "K2"
     },
@@ -42,19 +42,6 @@
       "id": "initiative:foundational-cli-todo-app",
       "type": "initiative",
       "label": "Foundational CLI TODO App"
-    },
-    {
-      "id": "candidate:WI-CANDIDATE-002",
-      "type": "roadmap-candidate",
-      "label": "WI-CANDIDATE-002"
-    },
-    {
-      "id": "wi:WI-003",
-      "type": "work-item",
-      "label": "WI-003 Módulo de Gestión de Tareas",
-      "path": "knowledge/delivery/work-items/draft/WI-003-m-dulo-de-gesti-n-de-tareas.md",
-      "status": "draft",
-      "knowledge_level": "K2"
     },
     {
       "id": "candidate:WI-CANDIDATE-003",
@@ -112,6 +99,29 @@
       "id": "candidate:WI-CANDIDATE-007",
       "type": "roadmap-candidate",
       "label": "WI-CANDIDATE-007"
+    },
+    {
+      "id": "wi:WI-002",
+      "type": "work-item",
+      "label": "WI-002 Base de Datos SQLite y Migraciones",
+      "path": "knowledge/delivery/work-items/ready/WI-002-base-de-datos-sqlite-y-migraciones.md",
+      "status": "ready",
+      "knowledge_level": "K2"
+    },
+    {
+      "id": "code:src/database/connection.ts",
+      "type": "code-glob",
+      "label": "src/database/connection.ts"
+    },
+    {
+      "id": "code:src/database/migrations/**/*",
+      "type": "code-glob",
+      "label": "src/database/migrations/**/*"
+    },
+    {
+      "id": "candidate:WI-CANDIDATE-002",
+      "type": "roadmap-candidate",
+      "label": "WI-CANDIDATE-002"
     }
   ],
   "edges": [
@@ -129,16 +139,6 @@
       "from": "tech:tech",
       "to": "delivery:delivery",
       "type": "informs"
-    },
-    {
-      "from": "wi:WI-002",
-      "to": "initiative:foundational-cli-todo-app",
-      "type": "belongs_to"
-    },
-    {
-      "from": "candidate:WI-CANDIDATE-002",
-      "to": "wi:WI-002",
-      "type": "materialized_as"
     },
     {
       "from": "wi:WI-003",
@@ -188,6 +188,26 @@
     {
       "from": "candidate:WI-CANDIDATE-007",
       "to": "wi:WI-007",
+      "type": "materialized_as"
+    },
+    {
+      "from": "wi:WI-002",
+      "to": "code:src/database/connection.ts",
+      "type": "owns"
+    },
+    {
+      "from": "wi:WI-002",
+      "to": "code:src/database/migrations/**/*",
+      "type": "owns"
+    },
+    {
+      "from": "wi:WI-002",
+      "to": "initiative:foundational-cli-todo-app",
+      "type": "belongs_to"
+    },
+    {
+      "from": "candidate:WI-CANDIDATE-002",
+      "to": "wi:WI-002",
       "type": "materialized_as"
     }
   ]

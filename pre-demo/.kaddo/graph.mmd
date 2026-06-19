@@ -3,10 +3,8 @@ flowchart LR
   product_product["Product"]
   tech_tech["Tech"]
   delivery_delivery["Delivery"]
-  wi_WI_002["WI-002 Base de Datos SQLite y Migraciones"]
-  initiative_foundational_cli_todo_app["Foundational CLI TODO App"]
-  candidate_WI_CANDIDATE_002["WI-CANDIDATE-002"]
   wi_WI_003["WI-003 Módulo de Gestión de Tareas"]
+  initiative_foundational_cli_todo_app["Foundational CLI TODO App"]
   candidate_WI_CANDIDATE_003["WI-CANDIDATE-003"]
   wi_WI_004["WI-004 Módulo de Gestión de Proyectos"]
   candidate_WI_CANDIDATE_004["WI-CANDIDATE-004"]
@@ -16,12 +14,14 @@ flowchart LR
   candidate_WI_CANDIDATE_006["WI-CANDIDATE-006"]
   wi_WI_007["WI-007 Pruebas de Integración y Validación del Flujo Kaddo"]
   candidate_WI_CANDIDATE_007["WI-CANDIDATE-007"]
+  wi_WI_002["WI-002 Base de Datos SQLite y Migraciones"]
+  code_src_database_connection_ts["src/database/connection.ts"]
+  code_src_database_migrations["src/database/migrations/**/*"]
+  candidate_WI_CANDIDATE_002["WI-CANDIDATE-002"]
 
   business_business -->|informs| product_product
   product_product -->|informs| tech_tech
   tech_tech -->|informs| delivery_delivery
-  wi_WI_002 -->|belongs_to| initiative_foundational_cli_todo_app
-  candidate_WI_CANDIDATE_002 -->|materialized_as| wi_WI_002
   wi_WI_003 -->|belongs_to| initiative_foundational_cli_todo_app
   candidate_WI_CANDIDATE_003 -->|materialized_as| wi_WI_003
   wi_WI_004 -->|belongs_to| initiative_foundational_cli_todo_app
@@ -32,3 +32,7 @@ flowchart LR
   candidate_WI_CANDIDATE_006 -->|materialized_as| wi_WI_006
   wi_WI_007 -->|belongs_to| initiative_foundational_cli_todo_app
   candidate_WI_CANDIDATE_007 -->|materialized_as| wi_WI_007
+  wi_WI_002 -->|owns| code_src_database_connection_ts
+  wi_WI_002 -->|owns| code_src_database_migrations
+  wi_WI_002 -->|belongs_to| initiative_foundational_cli_todo_app
+  candidate_WI_CANDIDATE_002 -->|materialized_as| wi_WI_002
