@@ -46,6 +46,7 @@ Knowledge maturity — Business: Consolidated · Product: Consolidated · Tech: 
 - ✓ product.md
 
 ### Tech — Structured
+- ✓ ADR-0001-seleccion-de-sqlite-y-libsql-client.md
 - ✓ codebase.md
 - ✓ current-state.md
 - ✓ knowledge.md
@@ -87,7 +88,7 @@ Generado con Kaddo Roadmap Agent. Las iniciativas y los elementos de trabajo (wo
 - WI-005 [feat] [K2] (draft) — Comandos CLI para Gestión de Tareas
 - WI-006 [feat] [K2] (draft) — Comandos CLI para Gestión de Proyectos
 - WI-007 [chore] [K2] (draft) — Pruebas de Integración y Validación del Flujo Kaddo
-- WI-002 [feat] [K2] (ready) — Base de Datos SQLite y Migraciones
+- WI-002 [feat] [K2] (ready) — Base de Datos SQLite y Migraciones · domains: Database
 
 ## Delivery Mix
 
@@ -100,12 +101,13 @@ Active Work Items by type:
 
 - WI-001 [chore] owns: package.json, tsconfig.json, vitest.config.ts, src/cli/index.ts, src/cli/index.test.ts
 - WI-002 [feat] owns: src/database/connection.ts, src/database/migrations/**/*
+- ADR-0001 [adr] owns: src/database/**
 
 ## Knowledge Graph
 
 - Available: yes
-- Nodes: 19
-- Edges: 17
+- Nodes: 22
+- Edges: 20
 - Active Work Items connected to code: 1
 
 Full graph: `.kaddo/graph.json` / `.kaddo/graph.mmd` (run `kaddo graph export` to refresh).
@@ -113,14 +115,14 @@ Full graph: `.kaddo/graph.json` / `.kaddo/graph.mmd` (run `kaddo graph export` t
 ## Graph Hints
 
 Graph relationship quality: partial
-Active hints: 6
+Active hints: 5
 Suggested agent: graph-agent
 
 - WI-003 has no code ownership, linked capability, linked decision.
 - WI-004 has no code ownership, linked capability, linked decision.
 - WI-005 has no code ownership, linked capability, linked decision.
 
-(+3 more in `.kaddo/graph-hints.md`)
+(+2 more in `.kaddo/graph-hints.md`)
 
 ## Missing Context
 

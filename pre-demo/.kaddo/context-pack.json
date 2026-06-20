@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "generatedAt": "2026-06-19T19:31:22.292Z",
+  "generatedAt": "2026-06-20T00:36:41.651Z",
   "project": {
     "name": "pre-demo",
     "state": "new",
@@ -81,7 +81,9 @@
         "status": "ready",
         "lifecycle": "ready",
         "knowledgeLevel": "K2",
-        "domains": []
+        "domains": [
+          "Database"
+        ]
       }
     ],
     "artifacts": [
@@ -107,6 +109,15 @@
           "src/database/connection.ts",
           "src/database/migrations/**/*"
         ]
+      },
+      {
+        "id": "ADR-0001",
+        "type": "adr",
+        "title": "Selección de SQLite local y @libsql/client para Persistencia",
+        "summary": "",
+        "codeGlobs": [
+          "src/database/**"
+        ]
       }
     ]
   },
@@ -129,6 +140,7 @@
       "layer": "Tech",
       "status": "Structured",
       "detected": [
+        "ADR-0001-seleccion-de-sqlite-y-libsql-client.md",
         "codebase.md",
         "current-state.md",
         "knowledge.md"
@@ -181,22 +193,21 @@
   },
   "external": [],
   "graph": {
-    "generatedAt": "2026-06-19T19:15:38.016Z",
-    "nodes": 19,
-    "edges": 17,
+    "generatedAt": "2026-06-20T00:36:39.655Z",
+    "nodes": 22,
+    "edges": 20,
     "activeWorkItemsConnectedToCode": 1
   },
   "graphHints": {
     "quality": "partial",
-    "totalHints": 6,
-    "activeWorkItemHints": 6,
+    "totalHints": 5,
+    "activeWorkItemHints": 5,
     "messages": [
       "WI-003 has no code ownership, linked capability, linked decision.",
       "WI-004 has no code ownership, linked capability, linked decision.",
       "WI-005 has no code ownership, linked capability, linked decision.",
       "WI-006 has no code ownership, linked capability, linked decision.",
-      "WI-007 has no code ownership, linked capability, linked decision.",
-      "WI-002 has no linked capability, linked decision."
+      "WI-007 has no code ownership, linked capability, linked decision."
     ]
   },
   "mappedModules": [],

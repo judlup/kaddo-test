@@ -17,7 +17,10 @@ flowchart LR
   wi_WI_002["WI-002 Base de Datos SQLite y Migraciones"]
   code_src_database_connection_ts["src/database/connection.ts"]
   code_src_database_migrations["src/database/migrations/**/*"]
+  capability_persistencia_local["Persistencia Local"]
+  adr_ADR_0001["ADR-0001 Selección de SQLite local y @libsql/client para Persistencia"]
   candidate_WI_CANDIDATE_002["WI-CANDIDATE-002"]
+  code_src_database["src/database/**"]
 
   business_business -->|informs| product_product
   product_product -->|informs| tech_tech
@@ -34,5 +37,8 @@ flowchart LR
   candidate_WI_CANDIDATE_007 -->|materialized_as| wi_WI_007
   wi_WI_002 -->|owns| code_src_database_connection_ts
   wi_WI_002 -->|owns| code_src_database_migrations
+  wi_WI_002 -->|implements| capability_persistencia_local
+  wi_WI_002 -->|depends_on| adr_ADR_0001
   wi_WI_002 -->|belongs_to| initiative_foundational_cli_todo_app
   candidate_WI_CANDIDATE_002 -->|materialized_as| wi_WI_002
+  adr_ADR_0001 -->|governs| code_src_database

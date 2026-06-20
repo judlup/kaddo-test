@@ -21,3 +21,7 @@ module_agents:
   installed_at: 2026-06-19
 modules:
   - agents
+  - adr
+module_adr:
+  installed: true
+  installed_at: 2026-06-20

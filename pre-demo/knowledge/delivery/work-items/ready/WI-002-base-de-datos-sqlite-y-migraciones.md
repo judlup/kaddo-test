@@ -6,7 +6,9 @@ knowledge_level: K2
 status: ready
 phase: now
 initiative: "Foundational CLI TODO App"
-domains: []
+domains: ["Database"]
+capabilities: ["Persistencia Local"]
+decisions: ["ADR-0001"]
 code: ["src/database/connection.ts", "src/database/migrations/**/*"]
 created_at: 2026-06-19
 source: roadmap

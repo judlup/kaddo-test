@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-06-19T19:15:38.039Z",
+  "generated_at": "2026-06-20T00:36:39.670Z",
   "quality": "partial",
   "summary": {
-    "nodes": 19,
-    "edges": 17,
-    "hints": 6
+    "nodes": 22,
+    "edges": 20,
+    "hints": 5
   },
   "metrics": {
-    "nodes_count": 19,
-    "edges_count": 17,
-    "connected_nodes_count": 19,
+    "nodes_count": 22,
+    "edges_count": 20,
+    "connected_nodes_count": 22,
     "isolated_nodes_count": 0,
     "active_work_items_without_code": 5,
-    "active_work_items_without_capabilities": 6,
+    "active_work_items_without_capabilities": 5,
     "work_items_without_source": 0,
     "adrs_without_code": 0,
     "capsules_without_related_work_items": 0
@@ -130,26 +130,6 @@
         "code": [
           "src/<area>/**"
         ],
-        "capabilities": [
-          "<capability>"
-        ],
-        "decisions": [
-          "ADR-XXX"
-        ]
-      }
-    },
-    {
-      "artifact_id": "WI-002",
-      "artifact_type": "work-item",
-      "path": "knowledge/delivery/work-items/ready/WI-002-base-de-datos-sqlite-y-migraciones.md",
-      "severity": "info",
-      "missing": [
-        "capabilities",
-        "decisions"
-      ],
-      "reason": "Active Work Item has limited graph relationships.",
-      "message": "WI-002 has no linked capability, linked decision.",
-      "suggested_front_matter": {
         "capabilities": [
           "<capability>"
         ],

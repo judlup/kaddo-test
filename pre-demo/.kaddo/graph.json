@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19T19:15:38.016Z",
+  "generated_at": "2026-06-20T00:36:39.655Z",
   "project": {
     "name": "pre-demo",
     "state": "new",
@@ -119,9 +119,25 @@
       "label": "src/database/migrations/**/*"
     },
     {
+      "id": "capability:persistencia-local",
+      "type": "capability",
+      "label": "Persistencia Local"
+    },
+    {
+      "id": "adr:ADR-0001",
+      "type": "decision",
+      "label": "ADR-0001 Selección de SQLite local y @libsql/client para Persistencia",
+      "path": "knowledge/tech/decisions/ADR-0001-seleccion-de-sqlite-y-libsql-client.md"
+    },
+    {
       "id": "candidate:WI-CANDIDATE-002",
       "type": "roadmap-candidate",
       "label": "WI-CANDIDATE-002"
+    },
+    {
+      "id": "code:src/database/**",
+      "type": "code-glob",
+      "label": "src/database/**"
     }
   ],
   "edges": [
@@ -202,6 +218,16 @@
     },
     {
       "from": "wi:WI-002",
+      "to": "capability:persistencia-local",
+      "type": "implements"
+    },
+    {
+      "from": "wi:WI-002",
+      "to": "adr:ADR-0001",
+      "type": "depends_on"
+    },
+    {
+      "from": "wi:WI-002",
       "to": "initiative:foundational-cli-todo-app",
       "type": "belongs_to"
     },
@@ -209,6 +235,11 @@
       "from": "candidate:WI-CANDIDATE-002",
       "to": "wi:WI-002",
       "type": "materialized_as"
+    },
+    {
+      "from": "adr:ADR-0001",
+      "to": "code:src/database/**",
+      "type": "governs"
     }
   ]
 }
