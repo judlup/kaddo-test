@@ -1,6 +1,6 @@
 {
   "version": "1",
-  "generatedAt": "2026-06-09T01:54:07.502Z",
+  "generatedAt": "2026-06-09T02:45:05.297Z",
   "project": {
     "name": "todoApp",
     "state": "new",
@@ -25,8 +25,8 @@
     "infrastructureFiles": []
   },
   "knowledge": {
-    "summary": "> Lo que es verdadero sobre el producto ahora.",
-    "roadmapSummary": "Generado con Kaddo Roadmap Agent. Las iniciativas y work items abajo son candidatos para revision humana; no son compromisos finales.",
+    "summary": "",
+    "roadmapSummary": "Implementar comandos basicos de tareas\n\r\n------------------------\r\nAgent: roadmap-agent\r\n\r\nProduced:\r\nknowledge/delivery/roadmap.md\r\n\r\nNext:\r\nkaddo create --from roadmap\r\nwork-item-agent\r\n------------------------",
     "inventoryAvailable": true,
     "workItems": [],
     "artifacts": [
@@ -51,6 +51,18 @@
           "package.json",
           "pnpm-lock.yaml",
           "src/database/**",
+          "tests/database/**"
+        ]
+      },
+      {
+        "id": "WI-003",
+        "type": "feature",
+        "title": "Crear modelo y persistencia de tareas",
+        "summary": "Crear el modelo de tareas, su migracion SQLite y una capa de persistencia testeada sin exponer todavia comandos CLI.",
+        "codeGlobs": [
+          "src/modules/tasks/**",
+          "src/database/migrations/**",
+          "tests/modules/tasks/**",
           "tests/database/**"
         ]
       }
@@ -88,6 +100,7 @@
       "detected": [
         "WI-001-initialize-typescript-cli-project.md",
         "WI-002-configurar-persistencia-sqlite-base.md",
+        "WI-003-crear-modelo-y-persistencia-de-tareas.md",
         "mvp-foundation.md",
         "roadmap.md"
       ]
@@ -96,22 +109,22 @@
   "roadmap": {
     "present": true,
     "candidates": 10,
-    "materialized": 2,
-    "remaining": 8
+    "materialized": 3,
+    "remaining": 7
   },
   "phase": {
     "phase": "Maintenance",
     "reasons": [
       "Roadmap available",
-      "2 materialized work item(s)",
-      "8 roadmap candidate(s) remaining",
+      "3 materialized work item(s)",
+      "7 roadmap candidate(s) remaining",
       "Ownership coverage 100%"
     ],
     "recommendedAgents": [
       "kaddo create --from roadmap",
       "work-item-agent"
     ],
-    "nextStep": "Materialize 8 remaining roadmap candidate(s)",
+    "nextStep": "Materialize 7 remaining roadmap candidate(s)",
     "llmInstructions": [
       "Materialize the remaining roadmap candidates.",
       "Do not implement yet."
@@ -120,6 +133,7 @@
   "deliveryMix": {},
   "mappedModules": [],
   "missing": [
+    "No project knowledge summary found yet.",
     "No work items found."
   ],
   "handoff": {
@@ -128,7 +142,7 @@
       "work-item-agent"
     ],
     "nextSteps": [
-      "Materialize 8 remaining roadmap candidate(s)"
+      "Materialize 7 remaining roadmap candidate(s)"
     ],
     "instructions": [
       "Materialize the remaining roadmap candidates.",

@@ -24,6 +24,7 @@
 ### Delivery — Traceable
 - ✓ WI-001-initialize-typescript-cli-project.md
 - ✓ WI-002-configurar-persistencia-sqlite-base.md
+- ✓ WI-003-crear-modelo-y-persistencia-de-tareas.md
 - ✓ mvp-foundation.md
 - ✓ roadmap.md
 
@@ -41,28 +42,30 @@
 - Delivery: Traceable
 - Agents: available
 - Roadmap candidates: 10
-- Materialized work items: 2
-- Remaining candidates: 8
-- Ownership coverage: 2/2 work items
+- Materialized work items: 3
+- Remaining candidates: 7
+- Ownership coverage: 3/3 work items
 
 ## Work Items
 - Draft: 0
 - Ready: 0
 - In Progress: 0
 - Blocked: 0
-- Completed: 2
+- Completed: 3
 - Archived: 0
 
 ## Work Items by Type
 - Work-items: 1
 - Chores: 1
+- Features: 1
 
 ## Work Items by Initiative
 - Fundacion tecnica del proyecto CLI — Completed: 1
+- Gestion de tareas — Completed: 1
 - Unassigned — Completed: 1
 
 ## Domains
-- Local Persistence
+- Local Persistence, Tasks
 
 ## Mapped Modules
 - Mapped modules: 0
@@ -71,10 +74,10 @@
 - Phase: Maintenance
 - Reason:
   - Roadmap available
-  - 2 materialized work item(s)
-  - 8 roadmap candidate(s) remaining
+  - 3 materialized work item(s)
+  - 7 roadmap candidate(s) remaining
   - Ownership coverage 100%
-- Next step: Materialize 8 remaining roadmap candidate(s)
+- Next step: Materialize 7 remaining roadmap candidate(s)
 
 ## Suggested Next Steps
-1. Materialize 8 roadmap candidate(s) with `kaddo create --from roadmap`.
+1. Materialize 7 roadmap candidate(s) with `kaddo create --from roadmap`.

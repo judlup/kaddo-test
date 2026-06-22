@@ -10,7 +10,7 @@ knowledge_level: K2
 
 ## Resumen
 
-El proyecto esta en fase de Active Delivery. La base tecnica del CLI ya fue inicializada y la persistencia SQLite base ya quedo configurada.
+El proyecto esta en fase de Active Delivery. La base tecnica del CLI, la persistencia SQLite base y la persistencia inicial de tareas ya quedaron configuradas.
 
 ## Work Items
 
@@ -24,6 +24,12 @@ El proyecto esta en fase de Active Delivery. La base tecnica del CLI ya fue inic
   - Estado: `completed`.
   - Resultado: conexion SQLite con `better-sqlite3`, ruta default configurable, migracion tecnica base y tests de database.
   - Ubicacion: `knowledge/delivery/work-items/completed/WI-002-configurar-persistencia-sqlite-base.md`.
+
+- WI-003: completado.
+  - Titulo: Crear modelo y persistencia de tareas.
+  - Estado: `completed`.
+  - Resultado: modelo Task, migracion `tasks`, repository de persistencia y tests de schema/repository.
+  - Ubicacion: `knowledge/delivery/work-items/completed/WI-003-crear-modelo-y-persistencia-de-tareas.md`.
 
 ## Stack Detectado
 
@@ -47,6 +53,9 @@ src/
     program.ts
   database/
     migrations/
+      0001-database-metadata.ts
+      0002-tasks.ts
+      index.ts
     config.ts
     connection.ts
     index.ts
@@ -55,6 +64,9 @@ src/
   modules/
     projects/
     tasks/
+      index.ts
+      task.model.ts
+      task.repository.ts
   shared/
     app-info.ts
 tests/
@@ -62,6 +74,10 @@ tests/
   database/
     connection.test.ts
     migrations.test.ts
+    tasks-migration.test.ts
+  modules/
+    tasks/
+      task.repository.test.ts
 ```
 
 ## Estado De Tests
@@ -73,7 +89,7 @@ Ultimo estado conocido:
 - `corepack pnpm build`: paso.
 - `corepack pnpm lint`: paso.
 - `corepack pnpm test`: paso.
-- Resultado de tests: 3 test files passing, 5 tests passing.
+- Resultado de tests: 5 test files passing, 11 tests passing.
 - `corepack pnpm dev -- --help`: paso en WI-001.
 
 ## Estado De Ownership
@@ -96,6 +112,12 @@ Ownership actual:
   - `package.json`
   - `pnpm-lock.yaml`
   - `src/database/**`
+  - `tests/database/**`
+
+- WI-003 owns:
+  - `src/modules/tasks/**`
+  - `src/database/migrations/**`
+  - `tests/modules/tasks/**`
   - `tests/database/**`
 
 Nota: el typo de ownership de WI-001 fue corregido de `src/shares/**` a `src/shared/**` en el work item completado.
@@ -121,6 +143,7 @@ Archivos y carpetas untracked relevantes:
 - `knowledge/delivery/roadmap.md`
 - `knowledge/delivery/work-items/completed/WI-001-initialize-typescript-cli-project.md`
 - `knowledge/delivery/work-items/completed/WI-002-configurar-persistencia-sqlite-base.md`
+- `knowledge/delivery/work-items/completed/WI-003-crear-modelo-y-persistencia-de-tareas.md`
 - `knowledge/inventory.md`
 - `knowledge/knowledge.md`
 - `knowledge/product/product.md`
@@ -139,21 +162,27 @@ Archivos y carpetas untracked relevantes:
 - `src/database/initialize.ts`
 - `src/database/migrations/.gitkeep`
 - `src/database/migrations/0001-database-metadata.ts`
+- `src/database/migrations/0002-tasks.ts`
 - `src/database/migrations/index.ts`
 - `src/database/migration-runner.ts`
 - `src/modules/projects/.gitkeep`
 - `src/modules/tasks/.gitkeep`
+- `src/modules/tasks/index.ts`
+- `src/modules/tasks/task.model.ts`
+- `src/modules/tasks/task.repository.ts`
 - `src/shared/.gitkeep`
 - `src/shared/app-info.ts`
 - `tests/cli-program.test.ts`
 - `tests/database/connection.test.ts`
 - `tests/database/migrations.test.ts`
+- `tests/database/tasks-migration.test.ts`
+- `tests/modules/tasks/task.repository.test.ts`
 - `tsconfig.json`
 - `vitest.config.ts`
 
 ## Proximos Pasos Recomendados
 
 1. Regenerar Kaddo cuando el CLI este disponible en PATH: `kaddo scan`, `kaddo owners suggest`, `kaddo guard` y `kaddo explain`.
-2. Materializar o refinar el siguiente work item de roadmap: crear modelo y persistencia de tareas.
-3. Mantener fuera de alcance hasta ese siguiente work item: tablas `tasks`, tablas `projects`, repositories, services, comandos CLI de dominio y filtros.
-4. Antes de continuar con implementacion, revisar que Kaddo ya no reporte WI-002 como active.
+2. Refinar el siguiente work item de roadmap: implementar comandos basicos de tareas.
+3. Mantener fuera de alcance hasta work items posteriores: tabla `projects`, persistencia de proyectos, filtros avanzados y salida JSON.
+4. Antes de continuar con implementacion, revisar que Kaddo ya no reporte WI-003 como active.

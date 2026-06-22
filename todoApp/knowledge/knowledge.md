@@ -55,6 +55,7 @@ Componentes previstos:
 - Existen `package.json`, `tsconfig.json`, `vitest.config.ts`, estructura inicial `src/` y una prueba minima.
 - La CLI minima usa Commander.js y muestra ayuda/version sin comandos de dominio reales.
 - La persistencia SQLite base usa `better-sqlite3`, una ruta default `data/app.sqlite`, foreign keys activadas y una tabla tecnica de migraciones.
+- La persistencia inicial de tareas incluye tabla `tasks`, modelo TypeScript y repository sin exponer comandos CLI.
 - El roadmap contiene candidatos parseables para `kaddo create --from roadmap`.
 - ADR-001 define el stack tecnico aceptado.
 - ADR-002 define el alcance funcional del MVP.
@@ -62,3 +63,4 @@ Componentes previstos:
 - Kaddo detecta TypeScript, pnpm y `src/` como directorio fuente.
 - WI-001 esta completado.
 - WI-002 esta completado: configurar persistencia SQLite base.
+- WI-003 esta completado: crear modelo y persistencia de tareas.

@@ -25,13 +25,13 @@ Phase: Maintenance
 Reason:
 
 - Roadmap available
-- 2 materialized work item(s)
-- 8 roadmap candidate(s) remaining
+- 3 materialized work item(s)
+- 7 roadmap candidate(s) remaining
 - Ownership coverage 100%
 
 Recommended next: kaddo create --from roadmap, work-item-agent
 
-Next step: Materialize 8 remaining roadmap candidate(s)
+Next step: Materialize 7 remaining roadmap candidate(s)
 
 ## Knowledge Layers
 
@@ -55,6 +55,7 @@ Knowledge maturity — Business: Consolidated · Product: Consolidated · Tech: 
 ### Delivery — Traceable
 - ✓ WI-001-initialize-typescript-cli-project.md
 - ✓ WI-002-configurar-persistencia-sqlite-base.md
+- ✓ WI-003-crear-modelo-y-persistencia-de-tareas.md
 - ✓ mvp-foundation.md
 - ✓ roadmap.md
 
@@ -68,17 +69,28 @@ Knowledge maturity — Business: Consolidated · Product: Consolidated · Tech: 
 
 ## Current Knowledge
 
-> Lo que es verdadero sobre el producto ahora.
+No project knowledge summary found yet.
 
 ## Roadmap
 
 - Roadmap candidates: 10
-- Materialized work items: 2
-- Remaining candidates: 8
+- Materialized work items: 3
+- Remaining candidates: 7
 
 Candidates are not yet Work Items. Materialize them with `kaddo create --from roadmap`.
 
-Generado con Kaddo Roadmap Agent. Las iniciativas y work items abajo son candidatos para revision humana; no son compromisos finales.
+Implementar comandos basicos de tareas
+
+------------------------
+Agent: roadmap-agent
+
+Produced:
+knowledge/delivery/roadmap.md
+
+Next:
+kaddo create --from roadmap
+work-item-agent
+------------------------
 
 ## Active Work Items
 
@@ -88,9 +100,11 @@ No active work items found.
 
 - WI-001 [work-item] owns: src/cli/**, src/database/**, src/modules/**, src/shared/**
 - WI-002 [chore] owns: package.json, pnpm-lock.yaml, src/database/**, tests/database/**
+- WI-003 [feature] owns: src/modules/tasks/**, src/database/migrations/**, tests/modules/tasks/**, tests/database/**
 
 ## Missing Context
 
+- No project knowledge summary found yet.
 - No work items found.
 
 ## Recommended Agent Handoff
@@ -102,7 +116,7 @@ Recommended next for the **Maintenance** phase:
 
 Next step:
 
-- Materialize 8 remaining roadmap candidate(s)
+- Materialize 7 remaining roadmap candidate(s)
 
 ## Instructions for the LLM
 

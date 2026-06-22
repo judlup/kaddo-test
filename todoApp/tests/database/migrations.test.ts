@@ -11,8 +11,8 @@ describe("database migrations", () => {
   it("aplica la migracion tecnica base", () => {
     const { database, appliedMigrations } = initializeDatabase({ path: ":memory:" });
 
-    expect(appliedMigrations).toEqual(["0001_database_metadata"]);
-    expect(getAppliedMigrationIds(database)).toEqual(["0001_database_metadata"]);
+    expect(appliedMigrations).toEqual(["0001_database_metadata", "0002_tasks"]);
+    expect(getAppliedMigrationIds(database)).toEqual(["0001_database_metadata", "0002_tasks"]);
 
     database.close();
   });
@@ -23,7 +23,7 @@ describe("database migrations", () => {
     const secondRun = runMigrations(database, baseMigrations);
 
     expect(secondRun).toEqual([]);
-    expect(getAppliedMigrationIds(database)).toEqual(["0001_database_metadata"]);
+    expect(getAppliedMigrationIds(database)).toEqual(["0001_database_metadata", "0002_tasks"]);
 
     database.close();
   });
